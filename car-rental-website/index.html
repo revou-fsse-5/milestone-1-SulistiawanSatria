@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar-brand">
+                    <span class="brand-name">CAR <span class="highlight">RENTAL</span></span>
+                </div>
+                <ul class="navbar-nav">
+                    <li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="#about" data-i18n="about">About</a></li>
+                    <li><a href="#vehicles" data-i18n="vehicles">Vehicles</a></li>
+                    <li><a href="#booking" data-i18n="booking">Booking</a></li>
+                    <li><a href="#faq" data-i18n="faq">FAQ</a></li>
+                    <li><a href="#testimonial" data-i18n="testimonial">Testimonial</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="sidebar">
+        <a href="#home" class="icon" id="icon1">
+            <img src="images/icon1.png" alt="Home Icon">
+        </a>
+        <a href="#about" class="icon" id="icon2">
+            <img src="images/icon2.png" alt="About Icon">
+        </a>
+        <a href="#vehicles" class="icon" id="icon3">
+            <img src="images/icon3.png" alt="Vehicles Icon">
+        </a>
+        <a href="#booking" class="icon" id="icon4">
+            <img src="images/icon4.png" alt="Booking Icon">
+        </a>
+        <a href="#faq" class="icon" id="icon6">
+            <img src="images/icon6.png" alt="FAQ Icon">
+        </a>
+        <div class="icon">
+            <a href="https://wa.me/+628773541265" target="_blank" rel="noopener">
+                <img src="images/whatsapp.png" alt="WhatsApp">
+            </a>
+            <span class="icon-text">WhatsApp</span>
+        </div>
+        <a href="#testimonial" class="icon" id="icon7">
+            <img src="images/icon7.png" alt="Testimonial Icon">
+        </a>
+        <div class="icon" id="dark-mode-toggle">
+            <img src="images/icon8.png" alt="Dark Mode Icon">
+        </div>        
+        <div class="icon" id="language-icon">
+            <img src="images/icon9.png" alt="Language Icon">
+            <select id="language-selector" aria-label="Select language">
+                <option value="en">English</option>
+                <option value="id">Indonesian</option>
+            </select>
+        </div>
+    </div>
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <img class="hero-image" src="images/car-background.jpg" alt="Luxury car on road" loading="lazy">
+                <div class="text-overlay">
+                    <h1 class="hero-title" data-i18n="heroTitle">Rent Luxury Car</h1>
+                    <a href="#booking" class="btn hero-btn" data-i18n="orderNow">Order Now</a>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 data-i18n="ourProfile">Our Profile</h2>
+                <p data-i18n="welcomeMessage">Welcome to Luxury Rent Car, where your journey begins with comfort and elegance. We offer a diverse fleet of luxury vehicles that cater to your every need. Whether you're looking to explore the city in style or travel for business, our cars are equipped with the latest features to ensure a smooth and enjoyable ride. Our dedicated team is committed to providing exceptional service and support, ensuring that your experience with us is nothing short of excellent. Discover the difference with Luxury Rent Car, where luxury meets convenience. Our easy booking process, competitive pricing, and 24/7 customer support make renting a car seamless and hassle-free.</p>
+            </div>
+        </section>
+        <section id="vehicles" class="vehicles-section">
+            <div class="container">
+                <h2 data-i18n="ourVehicles">Our Vehicles</h2>
+                <div class="vehicle-grid">
+                    <div class="vehicle-item">
+                        <img src="images/car1.jpg" alt="Car 1">
+                        <p>Vehicle 1</p>
+                        <p>$100/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="images/car2.jpg" alt="Car 2">
+                        <p>Vehicle 2</p>
+                        <p>$120/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="images/car3.jpg" alt="Car 3">
+                        <p>Vehicle 3</p>
+                        <p>$130/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="images/car4.jpg" alt="Car 4">
+                        <p>Vehicle 4</p>
+                        <p>$140/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="images/car5.jpg" alt="Car 5">
+                        <p>Vehicle 5</p>
+                        <p>$150/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="images/car6.jpg" alt="Car 6">
+                        <p>Vehicle 6</p>
+                        <p>$160/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                    <div class="vehicle-item">
+                        <img src="images/car7.jpg" alt="Car 7">
+                        <p>Vehicle 7</p>
+                        <p>$170/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="booking" class="booking-section">
+            <div class="container">
+                <h2 data-i18n="bookACar">Book a Car</h2>
+                <form id="booking-form">
+                    <table>
+                        <tr>
+                            <td><label for="name" data-i18n="name">Name:</label></td>
+                            <td><input type="text" id="name" name="name" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email" data-i18n="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pickup-location" data-i18n="pickupLocation">Pickup Location:</label></td>
+                            <td><input type="text" id="pickup-location" name="pickup-location" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dropoff-location" data-i18n="dropoffLocation">Dropoff Location:</label></td>
+                            <td><input type="text" id="dropoff-location" name="dropoff-location" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="car" data-i18n="car">Car:</label></td>
+                            <td>
+                                <select id="car" name="car" required>
+                                    <option value="vehicle1">Vehicle 1</option>
+                                    <option value="vehicle2">Vehicle 2</option>
+                                    <option value="vehicle3">Vehicle 3</option>
+                                    <option value="vehicle4">Vehicle 4</option>
+                                    <option value="vehicle5">Vehicle 5</option>
+                                    <option value="vehicle6">Vehicle 6</option>
+                                    <option value="vehicle7">Vehicle 7</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pickup-date" data-i18n="pickupDate">Pickup Date:</label></td>
+                            <td><input type="date" id="pickup-date" name="pickup-date" required></td>
+                        </tr>
+                        <tr>
+                            <td><label for="dropoff-date" data-i18n="dropoffDate">Dropoff Date:</label></td>
+                            <td><input type="date" id="dropoff-date" name="dropoff-date" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button type="submit" class="btn" data-i18n="bookNow">Book Now</button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+        <section id="testimonials" class="info-section">
+            <div class="container">
+                <h2 data-i18n="customerTestimonials">What Our Customers Say</h2>
+                <div class="testimonial-slider">
+                    <div class="testimonial">
+                        <p>"Great service and very reliable. Will definitely use again!"</p>
+                        <h4>- Asep</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Excellent customer service and clean cars. Highly recommended!"</p>
+                        <h4>- Udin</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="faq" class="info-section">
+            <div class="container">
+                <h2 data-i18n="faq">Frequently Asked Questions</h2>
+                <div class="faq-item">
+                    <h3 data-i18n="rentalProcess">What is the rental process?</h3>
+                    <p data-i18n="rentalProcessAnswer">Our rental process is simple. You can book a car online or visit our office. Provide your details, choose a car, and complete the payment. You're ready to go!</p>
+                </div>
+                <div class="faq-item">
+                    <h3 data-i18n="cancelBooking">Can I cancel my booking?</h3>
+                    <p data-i18n="cancelBookingAnswer">Yes, you can cancel your booking up to 24 hours before the rental period without any charges. Please refer to our cancellation policy for more details.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-section">
+                <h3 data-i18n="contactUs">Contact Us</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Main Street, Bandung, Indonesia</p>
+                <p><i class="fas fa-phone"></i> +62 82456 7890</p>
+                <p><i class="fas fa-envelope"></i> info@luxuryrentcar.com</p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="quickLinks">Quick Links</h3>
+                <ul>
+                    <li><a href="#home" data-i18n="home">Home</a></li>
+                    <li><a href="#about" data-i18n="about">About</a></li>
+                    <li><a href="#services" data-i18n="services">Services</a></li>
+                    <li><a href="#vehicles" data-i18n="vehicles">Vehicles</a></li>
+                    <li><a href="#booking" data-i18n="booking">Booking</a></li>
+                    <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="followUs">Follow Us</h3>
+                <p>
+                    <a href="#" rel="noopener"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" rel="noopener"><i class="fab fa-twitter"></i></a>
+                    <a href="#" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="#" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
+                </p>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="newsletter">Newsletter</h3>
+                <form id="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit" class="btn" data-i18n="subscribe">Subscribe</button>
+                </form>
+            </div>
+            <div class="footer-section">
+                <h3 data-i18n="ourLocation">Our Location</h3>
+                <div id="map" style="width:100%;height:200px;"></div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 Luxury Rent Car. All rights reserved.</p>
+        </div>
+    </footer>
+    <button id="scrollToTopBtn" class="scrollToTopBtn" data-i18n="scrollToTop">Scroll to Top</button>
+    <script src="https://unpkg.com/i18next@21.8.15/dist/umd/i18next.min.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
+    <script src="js/script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body></body>
+</html>
