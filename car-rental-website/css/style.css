@@ -4,6 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
+    overflow-x: hidden;
 }
 
 .container {
@@ -66,7 +67,7 @@ body {
 }
 
 .navbar-nav a {
-    color: #0e0e0f;
+    color: #181817;
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s;
@@ -75,7 +76,7 @@ body {
 }
 
 .navbar-nav a:hover {
-    color: #171716;
+    color: #e6e610;
 }
 
 /* Responsive Navbar */
@@ -424,7 +425,16 @@ body.dark-mode {
 }
 
 .info-section {
-    padding: 2rem 0;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+}
+
+.info-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .section h2 {
@@ -445,21 +455,29 @@ body.dark-mode {
     text-align: center;
 }
 
+.about-section .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
 .about-section h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
 }
 
 .about-section p {
-    font-size: 1rem;  /* Ukuran font normal */
-    line-height: 1.6; /* Tinggi garis normal */
-    margin-bottom: 20px;
-    text-align: justify;  /* Rata kiri dan kanan */
-    max-width: 800px; /* Batas lebar maksimal untuk teks */
-    margin-left: auto; /* Tengah-tengah */
-    margin-right: auto; /* Tengah-tengah */
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    text-align: justify;
 }
-
 .about-content {
     display: flex;
     flex-wrap: wrap;
@@ -629,19 +647,16 @@ body.dark-mode {
 
 .vehicle-item img {
     width: 100%;
-    height: 250px; /* Menyesuaikan tinggi gambar agar seragam */
-    object-fit: cover; /* Memastikan gambar menyesuaikan dengan kontainer */
+    height: 150px;
+    object-fit: cover;
 }
 
 .vehicle-item p {
     margin: 10px 0;
 }
 
-.vehicle-item .icon-favorite {
-    display: block;
+.vehicle-item p {
     margin: 10px 0;
-    font-size: 1.5rem;
-    color: #e74c3c;
 }
 
 .vehicle-item:hover {
@@ -1010,19 +1025,24 @@ footer .container {
 
 .testimonial-slider {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: auto;
     scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding: 20px 0;
+    justify-content: center;
 }
 
 .testimonial {
     scroll-snap-align: center;
-    flex: 0 0 80%;
+    flex: 0 0 60%;
     margin: 1rem;
     padding: 1rem;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
+    min-width: 200px;
+    max-width: 300px;
 }
 
 .testimonial p {
@@ -1037,15 +1057,17 @@ footer .container {
 }
 
 .faq-item {
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .faq-item h3 {
+    font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
 .faq-item p {
-    margin-left: 1rem;
+    font-size: 1rem;
+    margin: 0;
     color: #555;
 }
 
@@ -1147,10 +1169,9 @@ footer .container {
 
 /* Media Query untuk Tablet */
 @media (max-width: 768px) {
-    .container {
-        width: 90%;
+    .vehicle-grid {
+        gap: 15px; 
     }
-
     .navbar-nav {
         flex-direction: column;
         align-items: center;
@@ -1161,13 +1182,9 @@ footer .container {
     }
 
     .vehicle-item {
-        border: 1px solid #ccc;
-        margin: 1rem;
-        padding: 1rem;
-        width: calc(33.333% - 2rem);
-        text-align: center;
-        transition: transform 0.3s;
+        min-width: 150px; 
     }
+    
 
     .booking-section form,
     .booking-section table {
@@ -1177,6 +1194,21 @@ footer .container {
     .booking-section input,
     .booking-section select,
     .booking-section button {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        flex: 0 0 90%;
+        max-width: 90%;
+    }
+
+    .faq-item h3 {
+        font-size: 1.1rem;
+    }
+
+    .faq-item p {
         font-size: 0.9rem;
     }
 }
@@ -1210,4 +1242,78 @@ footer .container {
     .booking-section button {
         font-size: 0.8rem;
     }
+}
+
+/* Adjust vehicle grid for tablet view */
+@media (max-width: 768px) {
+    .vehicle-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Adjust the minmax values as needed */
+        gap: 20px; 
+    }
+
+    .vehicle-item {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .vehicle-item img {
+        height: 150px; 
+        object-fit: cover; 
+    }
+
+    .vehicle-item p {
+        font-size: 1rem; 
+    }
+}
+
+.vehicle-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.vehicle-item {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 200px;
+    flex: 0 0 auto; 
+    scroll-snap-align: start; 
+}
+
+.vehicles-section {
+    padding: 50px 20px;
+    background-color: #fff;
+    color: #333;
+    text-align: center;
+}
+
+.vehicles-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+
+.vehicle-item img {
+    width: 100%;
+    height: 200px; /* Default image height */
+    object-fit: cover; /* Ensure image fits within its container */
+}
+
+.vehicle-item .icon-favorite {
+    font-size: 1.5rem;
+    color: #e74c3c;
+    margin-top: 10px;
+}
+
+.vehicle-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
