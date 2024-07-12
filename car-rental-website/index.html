@@ -6,8 +6,8 @@
     <title>Car Rental</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -21,8 +21,8 @@
                     <li><a href="#about" data-i18n="about">About</a></li>
                     <li><a href="#vehicles" data-i18n="vehicles">Vehicles</a></li>
                     <li><a href="#booking" data-i18n="booking">Booking</a></li>
-                    <li><a href="#faq" data-i18n="faq">FAQ</a></li>
-                    <li><a href="#testimonial" data-i18n="testimonial">Testimonial</a></li>
+                    <li><a href="#faq" data-i18n="Faq">FAQ</a></li>
+                    <li><a href="#testimonial" data-i18n="Testimonial">Testimonial</a></li>
                 </ul>
             </div>
         </nav>
@@ -76,7 +76,11 @@
         <section id="about" class="about-section">
             <div class="container">
                 <h2 data-i18n="ourProfile">Our Profile</h2>
-                <p data-i18n="welcomeMessage">Welcome to Luxury Rent Car, where your journey begins with comfort and elegance. We offer a diverse fleet of luxury vehicles that cater to your every need. Whether you're looking to explore the city in style or travel for business, our cars are equipped with the latest features to ensure a smooth and enjoyable ride. Our dedicated team is committed to providing exceptional service and support, ensuring that your experience with us is nothing short of excellent. Discover the difference with Luxury Rent Car, where luxury meets convenience. Our easy booking process, competitive pricing, and 24/7 customer support make renting a car seamless and hassle-free.</p>
+                <p data-i18n="profileIntro">Welcome to Car Rental, the place where luxury meets comfort. Our mission is to provide you with the best car rental experience, ensuring that you travel in style and comfort wherever you go.</p>
+                <p data-i18n="profileMission">At Car Rental, we believe that every journey should be a memorable one. That's why we offer a wide selection of luxury cars that are meticulously maintained and equipped with the latest amenities. Whether you're traveling for business or leisure, we have the perfect vehicle to meet your needs.</p>
+                <p data-i18n="profileValues">Our core values are customer satisfaction, reliability, and excellence. We strive to exceed your expectations by offering personalized services and flexible rental options. Our team of experienced professionals is dedicated to making your rental process seamless and enjoyable.</p>
+                <p data-i18n="profileCommitment">We are committed to ensuring your safety and comfort throughout your rental experience. Our fleet undergoes regular maintenance and safety checks to ensure that every car is in top condition. We also offer 24/7 customer support to assist you with any inquiries or issues you may encounter during your rental period.</p>
+                <p data-i18n="profileConclusion">Thank you for choosing Car Rental. We look forward to serving you and making your journey a pleasant one. Book your luxury car today and experience the ultimate in comfort and convenience.</p>
             </div>
         </section>
         <section id="vehicles" class="vehicles-section">
@@ -125,6 +129,12 @@
                         <p>$170/day</p>
                         <span class="icon-favorite">❤</span>
                     </div>
+                    <div class="vehicle-item">
+                        <img src="images/car8.jpg" alt="Car 8">
+                        <p>Vehicle 7</p>
+                        <p>$190/day</p>
+                        <span class="icon-favorite">❤</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -161,6 +171,7 @@
                                     <option value="vehicle5">Vehicle 5</option>
                                     <option value="vehicle6">Vehicle 6</option>
                                     <option value="vehicle7">Vehicle 7</option>
+                                    <option value="vehicle8">Vehicle 8</option>
                                 </select>
                             </td>
                         </tr>
@@ -181,7 +192,7 @@
         </section>
         <section id="testimonials" class="info-section">
             <div class="container">
-                <h2 data-i18n="customerTestimonials">What Our Customers Say</h2>
+                <h2 data-i18n="Testimonials">Testimonial</h2>
                 <div class="testimonial-slider">
                     <div class="testimonial">
                         <p>"Great service and very reliable. Will definitely use again!"</p>
@@ -194,6 +205,7 @@
                 </div>
             </div>
         </section>
+        
         <section id="faq" class="info-section">
             <div class="container">
                 <h2 data-i18n="faq">Frequently Asked Questions</h2>
@@ -207,6 +219,7 @@
                 </div>
             </div>
         </section>
+        
     </main>
     <footer>
         <div class="container">
@@ -221,10 +234,11 @@
                 <ul>
                     <li><a href="#home" data-i18n="home">Home</a></li>
                     <li><a href="#about" data-i18n="about">About</a></li>
-                    <li><a href="#services" data-i18n="services">Services</a></li>
                     <li><a href="#vehicles" data-i18n="vehicles">Vehicles</a></li>
                     <li><a href="#booking" data-i18n="booking">Booking</a></li>
                     <li><a href="#contact" data-i18n="contact">Contact</a></li>
+                    <li><a href="#faq" data-i18n="faq">Faq</a></li>
+                    <li><a href="#testimonial" data-i18n="testimonial">Testimonial</a></li>
                 </ul>
             </div>
             <div class="footer-section">
@@ -256,6 +270,6 @@
     <script src="https://unpkg.com/i18next@21.8.15/dist/umd/i18next.min.js"></script>
     <script src="https://unpkg.com/i18next-browser-languagedetector@6.1.1/dist/umd/i18nextBrowserLanguageDetector.min.js"></script>
     <script src="js/script.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+    <button id="scrollToTopBtn" class="scrollToTopBtn" data-i18n="scrollToTop">Scroll to Top</button>
 </body></body></body></body>
 </html>
